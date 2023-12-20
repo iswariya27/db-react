@@ -17,7 +17,6 @@ function Authors(prpos) {
         getdata();
     }, []);
     const handleDelete = async (id) => {
-        // console.log(id);
         await axios.delete(`https://api.fake-rest.refine.dev/images/${id}`);
         const newUserData = users.filter((item) => item.id !== id);
         setUsers([...newUserData]);
@@ -26,7 +25,7 @@ function Authors(prpos) {
         <div className='container'>
             <div className="mdle">
                 <h1 className="h4">Author Data</h1>
-                <Link to="/addauthor" className="btn btn-primary"> Create User</Link>
+                <Link to="/addauthor" className="btn btn-primary"> Create Author</Link>
             </div>
             <div className="row">
                 {

@@ -26,7 +26,7 @@ function Books(prpos) {
         <div className='container'>
             <div className="mdle">
                 <h1 className="h4">Books Data</h1>
-                <Link to="/addbooks" className="btn btn-primary">Create User</Link>
+                <Link to="/addbooks" className="btn btn-primary">Create Books</Link>
             </div>
             <div className="card">
                 <div className="card-header">
